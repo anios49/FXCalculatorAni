@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  FXCalculator
+
+  Created by Animesh Mishra on 15/07/19.
+  Copyright © 2019 Animesh Mishra. All rights reserved.
+*/
+
+"localiseTxMode"     = "Are you buying or selling foreign currency?";
+"localiseTxType"     = "Transaction type:";
+"localiseFxOptions" = "Select Currency & Enter Value";
+
+"localiseBuying" = "Buying";
+"localiseSelling" = "Selling";
+"localiseTelegraphicTransfer" = "TelegraphicTransfer";
+"localiseCash" = "Cash";
+
+"localiseInputError" = "Incorrect Input";
+"localiseInputErrorMsg" = "Please enter only numbers & decimal.";
+"localiseDecimalErrorMsg" = "Please enter only one decimal.";
+"localiseTwoDecimalErrorMsg" = "Two decimal places input are allowed.";
+"localiseOk" = "OK";
+"localiseDigitAllowed" = "Please enter value less than 1,000,000,000.";
+"localiseError" = "Error";
+"localiseFXCalculator" = "FX Calculator";
+"localiseLastUpdatedOn" = "Last updated details on";

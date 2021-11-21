@@ -1,0 +1,11 @@
+framework module FXServices {
+  umbrella header "FXServices.h"
+
+  export *
+  module * { export * }
+}
+
+module FXServices.Swift {
+    header "FXServices-Swift.h"
+    requires objc
+}

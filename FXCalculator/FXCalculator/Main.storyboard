@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8f4-kk-Dts">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FXCalculatorViewController" customModule="FXCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-tZ-ZWT" customClass="LabelComponent" customModule="FXCalculator" customModuleProvider="target">
+                                <rect key="frame" x="16" y="105" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oja-lk-iaW" customClass="SegmentComponent" customModule="FXCalculator" customModuleProvider="target">
+                                <rect key="frame" x="16" y="119" width="382" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="txModeSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="pRy-ib-RO0"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9N-ks-2Ua" customClass="LabelComponent" customModule="FXCalculator" customModuleProvider="target">
+                                <rect key="frame" x="16" y="163" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PLg-HZ-sfB" customClass="SegmentComponent" customModule="FXCalculator" customModuleProvider="target">
+                                <rect key="frame" x="16" y="179" width="382" height="29"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <connections>
+                                    <action selector="txTypeSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SU5-UT-HIG"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-nR-mkZ" customClass="LabelComponent" customModule="FXCalculator" customModuleProvider="target">
+                                <rect key="frame" x="16" y="223" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-wr-ueW">
+                                <rect key="frame" x="16" y="223" width="382" height="120"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-m4-Msx" customClass="CurrencyViewComponent" customModule="FXCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="191" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3J-G5-9L7" customClass="CurrencyViewComponent" customModule="FXCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="199" y="0.0" width="183" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="z3J-G5-9L7" secondAttribute="trailing" id="69x-Db-32D"/>
+                                    <constraint firstItem="z3J-G5-9L7" firstAttribute="top" secondItem="TdL-wr-ueW" secondAttribute="top" id="H3u-Fr-bxW"/>
+                                    <constraint firstAttribute="bottom" secondItem="z3J-G5-9L7" secondAttribute="bottom" id="O2O-dc-2Z2"/>
+                                    <constraint firstAttribute="height" constant="120" id="TNc-TR-t54"/>
+                                    <constraint firstItem="lTt-m4-Msx" firstAttribute="width" secondItem="TdL-wr-ueW" secondAttribute="width" multiplier="0.5" id="UJ9-ce-8aB"/>
+                                    <constraint firstItem="z3J-G5-9L7" firstAttribute="leading" secondItem="lTt-m4-Msx" secondAttribute="trailing" constant="8" id="gg5-iA-Erc"/>
+                                    <constraint firstItem="lTt-m4-Msx" firstAttribute="leading" secondItem="TdL-wr-ueW" secondAttribute="leading" id="nrx-GJ-rQ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="lTt-m4-Msx" secondAttribute="bottom" id="vX1-We-GH8"/>
+                                    <constraint firstItem="lTt-m4-Msx" firstAttribute="top" secondItem="TdL-wr-ueW" secondAttribute="top" id="vqr-lX-xh5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U55-OT-p30" customClass="LabelComponent" customModule="FXCalculator" customModuleProvider="target">
+                                <rect key="frame" x="16" y="343" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Txv-9e-oZm">
+                                <rect key="frame" x="0.0" y="476" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Hmg-8h-JV4"/>
+                                    <barButtonItem title="Done" id="JZZ-KO-aC3">
+                                        <connections>
+                                            <action selector="doneButtonTapped:" destination="BYZ-38-t0r" id="4sY-AC-B55"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2en-XA-ece">
+                                <rect key="frame" x="0.0" y="520" width="414" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="vn8-i6-l5B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="s3g-b7-Mda"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vkL-Ng-C5X"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U55-OT-p30" firstAttribute="top" secondItem="TdL-wr-ueW" secondAttribute="bottom" id="04C-MH-Fzk"/>
+                            <constraint firstItem="9fm-tZ-ZWT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="105" id="3jl-EQ-gMp"/>
+                            <constraint firstItem="6Qx-nR-mkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="4hy-Da-eNc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q9N-ks-2Ua" secondAttribute="trailing" constant="16" id="8WM-PR-okN"/>
+                            <constraint firstItem="Txv-9e-oZm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A1C-Bp-Uev"/>
+                            <constraint firstAttribute="trailing" secondItem="6Qx-nR-mkZ" secondAttribute="trailing" constant="16" id="AtE-wR-Qmo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PLg-HZ-sfB" secondAttribute="trailing" constant="16" id="Aze-ZW-0TB"/>
+                            <constraint firstItem="2en-XA-ece" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hxs-Df-AUO"/>
+                            <constraint firstItem="TdL-wr-ueW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ItH-id-ufa"/>
+                            <constraint firstItem="TdL-wr-ueW" firstAttribute="top" secondItem="6Qx-nR-mkZ" secondAttribute="bottom" id="JEI-y1-Kup"/>
+                            <constraint firstItem="PLg-HZ-sfB" firstAttribute="top" secondItem="Q9N-ks-2Ua" secondAttribute="bottom" constant="16" id="O5X-J0-JFP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9fm-tZ-ZWT" secondAttribute="trailing" constant="16" id="P4u-lz-hAu"/>
+                            <constraint firstItem="Txv-9e-oZm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PRr-9d-M1q"/>
+                            <constraint firstItem="2en-XA-ece" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QEc-hO-rYg"/>
+                            <constraint firstItem="2en-XA-ece" firstAttribute="top" secondItem="Txv-9e-oZm" secondAttribute="bottom" id="Qiq-K8-elm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TdL-wr-ueW" secondAttribute="trailing" constant="16" id="diQ-qE-ljS"/>
+                            <constraint firstItem="Q9N-ks-2Ua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eIx-LE-FyU"/>
+                            <constraint firstAttribute="trailing" secondItem="U55-OT-p30" secondAttribute="trailing" constant="16" id="ioJ-sa-SQ9"/>
+                            <constraint firstItem="oja-lk-iaW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jiu-MI-uxu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oja-lk-iaW" secondAttribute="trailing" constant="16" id="kX5-Pi-xL9"/>
+                            <constraint firstItem="9fm-tZ-ZWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l0X-jK-KjJ"/>
+                            <constraint firstItem="2en-XA-ece" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lWs-ks-ULt"/>
+                            <constraint firstItem="Q9N-ks-2Ua" firstAttribute="top" secondItem="oja-lk-iaW" secondAttribute="bottom" constant="16" id="ldd-pA-BeW"/>
+                            <constraint firstItem="PLg-HZ-sfB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wNE-Bj-HEy"/>
+                            <constraint firstItem="oja-lk-iaW" firstAttribute="top" secondItem="9fm-tZ-ZWT" secondAttribute="bottom" constant="14" id="xnJ-z5-G46"/>
+                            <constraint firstItem="U55-OT-p30" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="y1B-5H-AzR"/>
+                            <constraint firstItem="6Qx-nR-mkZ" firstAttribute="top" secondItem="PLg-HZ-sfB" secondAttribute="bottom" constant="16" id="zO1-37-SOc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UNZ-Cj-gg6"/>
+                    <connections>
+                        <outlet property="audCurrencyComponent" destination="lTt-m4-Msx" id="yxK-03-eln"/>
+                        <outlet property="currencySelectionLabel" destination="6Qx-nR-mkZ" id="ea7-h6-8CQ"/>
+                        <outlet property="lastUpdatedTImeLabel" destination="U55-OT-p30" id="Fdz-oX-YwY"/>
+                        <outlet property="otherCurrencyComponent" destination="z3J-G5-9L7" id="3iR-bn-GLH"/>
+                        <outlet property="pickerView" destination="2en-XA-ece" id="0R9-gH-QfR"/>
+                        <outlet property="segmentLabelComponet" destination="9fm-tZ-ZWT" id="4n9-eV-G3K"/>
+                        <outlet property="toolBar" destination="Txv-9e-oZm" id="Xb9-lK-9V3"/>
+                        <outlet property="transactionLabelComponent" destination="Q9N-ks-2Ua" id="Ok4-vB-Dhh"/>
+                        <outlet property="transactionModeSegmentControl" destination="oja-lk-iaW" id="UHg-lz-QQh"/>
+                        <outlet property="transactionTypeSegmentControl" destination="PLg-HZ-sfB" id="Bcp-FG-lAk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="132.88043478260872"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GDW-mb-sJg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8f4-kk-Dts" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rv7-b5-Ijj">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yjC-DJ-hHV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOQ-5T-iHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
