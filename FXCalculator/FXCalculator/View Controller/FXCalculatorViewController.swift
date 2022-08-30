@@ -49,6 +49,7 @@ final class FXCalculatorViewController: UIViewController {
         }
     }
     
+    // Deinit
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
